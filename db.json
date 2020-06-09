@@ -1,0 +1,61 @@
+{
+  "logs": [
+    {
+      "id": 2,
+      "message": "Fixed Hard drive on station 101",
+      "attention": true,
+      "tech": "Emmanuel Ochoa",
+      "date": "2020-06-09T20:10:52.144Z"
+    },
+    {
+      "id": 3,
+      "message": "Test2",
+      "attention": true,
+      "tech": "Harry Potter",
+      "date": "2020-06-09T13:53:55.646Z"
+    },
+    {
+      "message": "test3",
+      "attention": false,
+      "tech": "Harry Potter",
+      "date": "2020-06-09T13:54:14.718Z",
+      "id": 4
+    },
+    {
+      "message": "test5",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2020-06-09T13:54:33.438Z",
+      "id": 5
+    },
+    {
+      "message": "test45",
+      "attention": true,
+      "tech": "Emmanuel Ochoa",
+      "date": "2020-06-09T20:14:11.641Z",
+      "id": 6
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 2,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "firstName": "Emmanuel",
+      "lastName": "Ochoa",
+      "id": 5
+    },
+    {
+      "firstName": "Juan",
+      "lastName": "Perez",
+      "id": 6
+    }
+  ]
+}
