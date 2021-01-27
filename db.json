@@ -1,39 +1,25 @@
 {
   "logs": [
     {
+      "id": 1,
+      "message": "Cambiar disco duro de maquina 102",
+      "attention": true,
+      "tech": "Emmanuel Ochoa",
+      "date": "2020-06-13T21:53:48.600Z"
+    },
+    {
       "id": 2,
-      "message": "Fixed Hard drive on station 101",
-      "attention": true,
-      "tech": "Emmanuel Ochoa",
-      "date": "2020-06-09T20:10:52.144Z"
-    },
-    {
-      "id": 3,
-      "message": "Test2",
-      "attention": true,
-      "tech": "Harry Potter",
-      "date": "2020-06-09T13:53:55.646Z"
-    },
-    {
-      "message": "test3",
+      "message": "[Funcionando] Se cambiaron nuevos cables de red en departamento 101",
       "attention": false,
-      "tech": "Harry Potter",
-      "date": "2020-06-09T13:54:14.718Z",
-      "id": 4
+      "tech": "John Doe",
+      "date": "2020-06-13T21:50:41.421Z"
     },
     {
-      "message": "test5",
+      "message": "[Urgente] la red de Internet no funciona en la estación de trabajo 21",
       "attention": true,
-      "tech": "Sara Wilson",
-      "date": "2020-06-09T13:54:33.438Z",
-      "id": 5
-    },
-    {
-      "message": "test45",
-      "attention": true,
-      "tech": "Emmanuel Ochoa",
-      "date": "2020-06-09T20:14:11.641Z",
-      "id": 6
+      "tech": "Sam Smith",
+      "date": "2020-06-13T21:52:18.765Z",
+      "id": 3
     }
   ],
   "techs": [
