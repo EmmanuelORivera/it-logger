@@ -1,3 +1,4 @@
+import { apiDomain } from "../utils/apiDomain";
 import {
   GET_LOGS,
   SET_LOADING,
@@ -26,7 +27,7 @@ import {
 export const getLogs = () => async (dispatch) => {
   try {
     setLoading();
-    const res = await fetch("/logs");
+    const res = await fetch(`${apiDomain()}/logs`);
     const data = await res.json();
 
     dispatch({
@@ -45,7 +46,7 @@ export const getLogs = () => async (dispatch) => {
 export const addLog = (log) => async (dispatch) => {
   try {
     setLoading();
-    const res = await fetch("/logs", {
+    const res = await fetch(`${apiDomain()}/logs`, {
       method: "POST",
       body: JSON.stringify(log),
       headers: {
@@ -70,7 +71,7 @@ export const addLog = (log) => async (dispatch) => {
 export const deleteLog = (id) => async (dispatch) => {
   try {
     setLoading();
-    await fetch(`/logs/${id}`, {
+    await fetch(`${apiDomain()}/logs/${id}`, {
       method: "DELETE",
     });
 
@@ -89,7 +90,7 @@ export const deleteLog = (id) => async (dispatch) => {
 export const updateLog = (log) => async (dispatch) => {
   try {
     setLoading();
-    const res = await fetch(`/logs/${log.id}`, {
+    const res = await fetch(`${apiDomain()}/logs/${log.id}`, {
       method: "PUT",
       body: JSON.stringify(log),
       headers: {
@@ -113,7 +114,7 @@ export const updateLog = (log) => async (dispatch) => {
 export const searchLogs = (text) => async (dispatch) => {
   try {
     setLoading();
-    const res = await fetch(`/logs?q=${text}`);
+    const res = await fetch(`${apiDomain()}/logs?q=${text}`);
     const data = await res.json();
 
     dispatch({

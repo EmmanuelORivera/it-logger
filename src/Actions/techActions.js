@@ -1,3 +1,4 @@
+import { apiDomain } from "../utils/apiDomain";
 import {
   GET_TECHS,
   ADD_TECHS,
@@ -10,7 +11,7 @@ import {
 export const getTechs = () => async (dispatch) => {
   try {
     setLoading();
-    const res = await fetch("/techs");
+    const res = await fetch(`${apiDomain()}/techs`);
     const data = await res.json();
 
     dispatch({
@@ -28,7 +29,7 @@ export const getTechs = () => async (dispatch) => {
 export const addTech = (tech) => async (dispatch) => {
   try {
     setLoading();
-    const res = await fetch("/techs", {
+    const res = await fetch(`${apiDomain()}/techs`, {
       method: "POST",
       body: JSON.stringify(tech),
       headers: {
@@ -52,7 +53,7 @@ export const addTech = (tech) => async (dispatch) => {
 export const deleteTech = (id) => async (dispatch) => {
   try {
     setLoading();
-    await fetch(`/techs/${id}`, {
+    await fetch(`${apiDomain()}/techs/${id}`, {
       method: "DELETE",
     });
 

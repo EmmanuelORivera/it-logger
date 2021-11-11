@@ -1,18 +1,11 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Cambiar disco duro de maquina 102",
-      "attention": true,
-      "tech": "Emmanuel Ochoa",
-      "date": "2020-06-13T21:53:48.600Z"
-    },
-    {
       "id": 2,
       "message": "[Funcionando] Se cambiaron nuevos cables de red en departamento 101",
       "attention": false,
-      "tech": "John Doe",
-      "date": "2020-06-13T21:50:41.421Z"
+      "tech": "Juan Perez",
+      "date": "2021-11-11T10:06:51.012Z"
     },
     {
       "message": "[Urgente] la red de Internet no funciona en la estación de trabajo 21",
