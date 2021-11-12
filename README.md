@@ -1,6 +1,11 @@
 # ITLogger
 
 > React app to track IT department tasks and issues. Uses JSON-Server as a mock backend. This is part of a Udemy Course.
+
+## Watch this project deployed on netlify
+
+[https://it-logger-95.netlify.app/](https://it-logger-95.netlify.app/)
+
 ## Usage
 
 ### `npm install`
